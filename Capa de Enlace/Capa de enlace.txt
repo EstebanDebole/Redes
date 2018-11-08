@@ -1,0 +1,26 @@
+Capa de enlace
+------------------------------------------------------ ------------------------------------------------------------------
+Capa 2
+PDU: Trama
+Armar la trama (frame)
+Direcciones mac para identificar origen y destino
+Correcciones de errores (FEC)
+	identifica y corrige los errres en bit sin necesidad de retransmision
+half duplex y full duplex
+Se implementa en las placas de red.
+Agrega una cola ademas del header para correccion de errores(CRC).
+Chequeo de paridad, forzar cantidad par o impar de unos.
+CRC (codigo de redundancia ciclica)
+	vinen cadenas de bits, division de polinomios en aritmetica modulo 2(xor). no existe el acarreo.
+	si da error lo descarta
+Colisiones
+	randomico
+		CSMA, CSMA/CD, CSMA/CA
+	particionado
+	toma de turnos
+		el que tiene token puede transmitir
+Direcciones MAC (48 bits)
+	llevar la trama de una interfaz a otra interfaz fisicamente conectada (misma red)
+	6 pares de digitos hexadecimal (primeros 3 para provedor y lo demas para ID)
+	MAC tiene importancia en una red, en diferentes redes puede repetirse la mac sin problemas.
+	

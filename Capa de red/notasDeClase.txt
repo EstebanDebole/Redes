@@ -1,0 +1,27 @@
+-------------------------------------------------------- Protocolo IP ------------------------------------------------------
+No orientado a conexion.
+Protocolo descentralizado.
+tablas de ruteo:
+	cuando intento mandar algo a una red, se hace un andding y verifica cual es la red destino, si no coincide con ninguna, se va por default gateway (0.0.0.0) si es que esta.
+
+	fordwarading psar datagrama de router, cuando se porque interfaz sacarlo.
+	Fragmentacion ip: si lo mando es mayor a lo que puede recibir (se divide datagrama).DIFERENTES MTU.
+
+----------------------------------------------------------- ICMP -----------------------------------------------------
+Protocolo auxiliar de IP, para infomar errores "no brinda confiabilidad a IP" solo brinda feedback.
+ICMP se encapsula en IP.
+Envia datos de control.
+1=ICMP
+6= TCP
+17= UDP
+PING Sirve para medir RTT. Netstat -ntlu.
+163
+----------------------------------------------------------- DHCP ------------------------------------------------------
+Obtener parametros (dirIp,mascara,dns,otro mas el 3) de forma dinamica(DHCP) o estatica(Manual).
+Otro protocolo helper de L3.
+sobre UDP.
+RFC-2131
+Cliente 68 UDP
+Server 67 UDP
+
+
