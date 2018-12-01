@@ -1,0 +1,17 @@
+---------------------------------------------------- CAPA DE ENLACE --------------------------------------------------
+Ethernet
+	ARP = IP-> MAC addr
+	haciendo el camino arp de origen a destino se va armadno la tablas 
+	ARP request
+		IpOrigen:ipPcOrigen; ipDestino: ipPcDestino; macOrigen: macPcOrigen; macDestino: 00:00:00
+	Trama ethernet
+		MacDestino: FF:FF:FF:FF:FF; macOrigen:MacPcOrigen; ARP REQUEST; FCS
+
+	ARP REPLY -> Respuesta unicast
+	mac importante saberlas a nivel de mi red.
+
+	comando arp -an (tabla de macs)
+	--------------------
+	hub vs switch
+	Hub -> dispositivo capa fisica, no entiende que es lo que pasa por el, solo entiende bits. manda a todos los puertos menos el de origen. 
+	Switch -> dispositivos de capa de enlace, capacidad de entender trama ethernet. tabla [arp, puerto], esta se llena con broadcast, arp request
